@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        tools:context=".LoginFragment">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorLayout"
+                android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="25sp"
+                        android:textAlignment="center"
+                        android:width="250dp"
+                        android:textStyle="bold"
+                        android:text="@string/enter_login_details" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:width="100dp"
+                        android:text="@string/email" />
+
+                    <EditText
+                        android:id="@+id/edittext_username"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:autofillHints=""
+                        android:hint="@string/email_hint" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:width="100dp"
+                        android:text="@string/password" />
+
+                    <EditText
+                        android:id="@+id/edittext_pwd"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:autofillHints=""
+                        android:hint="@string/password_hint"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+                    <Button
+                        android:id="@+id/button_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/colorButton"
+                        android:text="@string/login"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginEnd="10dp"
+                        />
+                    <Button
+                        android:id="@+id/button_new_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/colorButton"
+                        android:text="@string/new_login"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginStart="10dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+    </FrameLayout>
+</layout>

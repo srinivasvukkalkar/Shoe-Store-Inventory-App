@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBackground">#3b9fd1</color>
+    <color name="colorLayout">#faee05</color>
+    <color name="colorFont">#0a0a0a</color>
+    <color name="colorButton">#ff9100</color>
+    <color name="colorShoeItem">#ad5826</color>
+
+
+</resources>

@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+
+    <string name="enter_login_details">Enter Login Details</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="new_login">New Login</string>
+
+
+    <string name="email_hint">abc@xyz.com</string>
+    <string name="password_hint">**********</string>
+
+
+    <string name="welcome_screen">WELCOME</string>
+    <string name="welcome_text1">Welcome to Shoe store App, your go-to shoe store for style, comfort, and quality!
+                                Discover the latest trends, exclusive deals, and a curated collection of footwear for every occasion.
+                                Whether you\'re looking for casual kicks, formal footwear, or performance sneakers, we\'ve got you covered.
+                                Step into something amazing today!</string>
+    <string name="welcome_text2">We\’re excited to have you here. Get ready to explore a world of top-notch footwear, tailored to your taste and needs.
+                                Enjoy personalized recommendations, special promotions, and seamless shopping—all at your fingertips.
+                                Let\’s make every step count!</string>
+    <string name="instruction_button">Go To Instructions Screen</string>
+
+
+    <string name="instruction_details">INSTRUCTIONS</string>
+    <string name="instruction_text1">
+
+1. Browse the Collection:
+   - Explore our wide range of shoes by category (Men, Women, Kids) or filter by style (Sneakers, Formal, Boots, etc.).
+   - Use search to quickly find specific styles or brands.
+
+2. Filter &amp; Sort:
+   - Narrow down your options by size, color, price, or brand.
+   - Sort results by popularity, newest arrivals, or price to match your preferences.
+
+3. Product Details:
+   - Tap on any shoe to view detailed descriptions, customer reviews, and size guides. You can also view multiple angles with zoom-in features.
+
+</string>
+    <string name="instruction_text2">
+
+4. Exclusive Offers:
+   - Don’t forget to check the \"Deals\" section for special discounts, promotions, and limited-time offers
+
+5. Customer Support:
+   - Have any questions or issues? Contact us via the app\’s chat or help section for quick assistance.
+
+6. Enjoy seamless shopping with [Store Name], where finding the perfect pair is just a tap away!</string>
+    <string name="shoe_list_button">Shoe List</string>
+
+
+    <string name="shoe_details">Shoe Details</string>
+    <string name="enter_shoe_details">Enter Shoe Details</string>
+    <string name="shoe_name">Shoe Name</string>
+    <string name="company">Company</string>
+    <string name="shoe_size">Shoe Size</string>
+    <string name="description">Description</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="logout">Logout</string>
+
+
+    <string name="shoe_name_hint">EX: SPORT SHOE</string>
+    <string name="company_hint">EX: NIKE</string>
+    <string name="shoe_size_hint">EX: 10</string>
+    <string name="description_hint">DESCRIPTION DETAILS</string>
+
+</resources>

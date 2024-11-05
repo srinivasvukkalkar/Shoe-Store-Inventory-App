@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="viewModel"
+            type="com.udacity.shoestore.viewModel.ShoesViewModel" />
+        <variable
+            name="shoe"
+            type="com.udacity.shoestore.models.Shoe" />
+    </data>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        tools:context=".ShoeDetailFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorLayout"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="25sp"
+                        android:textAlignment="center"
+                        android:width="250dp"
+                        android:textStyle="bold"
+                        android:text="@string/enter_shoe_details" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:width="100dp"
+                        android:text="@string/shoe_name" />
+
+                    <EditText
+                        android:id="@+id/edittext_shoename"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:autofillHints=""
+                        android:text="@={shoe.name}"
+                        android:hint="@string/shoe_name"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:width="100dp"
+                        android:text="@string/company" />
+
+                    <EditText
+                        android:id="@+id/edittext_company"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="@={shoe.company}"
+                        android:autofillHints=""
+                        android:hint="@string/company_hint"/>
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:width="100dp"
+                        android:text="@string/shoe_size" />
+
+                    <EditText
+                        android:id="@+id/edittext_shoesize"
+                        android:layout_width="200dp"
+                        android:inputType="number"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="@={shoe.size + ``}"
+                        android:autofillHints=""
+                        android:hint="@string/shoe_size_hint"/>
+        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:width="100dp"
+                        android:text="@string/description" />
+
+                    <EditText
+                        android:id="@+id/edittext_description"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:text="@={shoe.description}"
+                        android:autofillHints=""
+                        android:hint="@string/description_hint"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+                    <Button
+                        android:id="@+id/button_cancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/colorButton"
+                        android:text="@string/cancel"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginEnd="10dp"
+                        />
+                    <Button
+                        android:id="@+id/button_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/colorButton"
+                        android:onClick="@{()-> viewModel.addNewShoe(shoe)}"
+                        android:text="@string/save"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:layout_marginStart="10dp"
+                        />
+                </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>
