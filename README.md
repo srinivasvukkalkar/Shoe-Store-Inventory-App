@@ -1,78 +1,21 @@
 # The Shoe Store
 
-This project will consist of five screens. You don't have to create a shoe store, you can use any other item as long as you create the following screens. You will be creating:
+This project is a simple shoe store application with five primary screens:
 
-1. Login screen: Email and password fields and labels plus create and login buttons
-2. Welcome onboarding screen
-3. Instructions onboarding screen
-4. Shoe Listing screen
-5. Shoe Detail screen for adding a new shoe
+1. Login screen: Contains fields for email and password, with "Create" and "Login" buttons.
+2. Welcome Screen: A welcome screen for onboarding.
+3. Instructions Screen: Provides user instructions.
+4. Shoe Listing Screen: Displays a list of shoes.
+5. Shoe Detail Screen: A form to add details for a new shoe.
 
-## Getting Started
+The navigation flow is as follows:
 
-Open the starter project in the latest stable version of Android Studio.
+* After clicking the Login button on the Login screen, users are taken to the Welcome screen.
+* From the Welcome screen, users can proceed to the Instructions screen.
+* The Instructions screen has navigation to the Shoe Listing screen, which displays a list of default shoe items.
+* In the Shoe Listing screen, users can click the Floating Action Button to navigate to the Shoe Detail screen, where they can input details for a new shoe.
+* After entering the details and clicking Save, the app returns to the Shoe Listing screen, displaying the newly added shoe in the list.
 
-Open the starter project in Android Studio
+This app demonstrates key Android concepts including navigation components, data binding, ViewModel, and LiveData to manage UI and data flow efficiently.
 
-##Steps
-
-1. Open the starter project in Android Studio
-
-2. Add the navigation libraries to the app build.gradle file
-
-3. Add the safe-arg plugin to the main and app build.gradle file
-
-4. Create a new navigation xml file
-
-5. Create a new Login destination.
-
-   * Include email and password labels 
-
-   - Include email and password fields
-   - Create buttons for creating a new login and logging in with an existing account
-   - Clicking either button should navigate to the Welcome Screen.
-
-6. Create a new Welcome screen destination that includes:
-
-   * A new layout
-   * At least 2 textviews
-   * A navigation button with actions to navigate to the instructions screen
-
-7. Create a new Instruction destination that includes:
-
-   * A new layout
-   * At least 2 textviews
-   * A navigation button with actions to navigate to the shoe list screen
-
-8. Create a class that extends ViewModel
-
-   *  Use a LiveData field that returns the list of shoes
-
-9. Create a new Shoe List destination that includes:
-
-   * A new layout
-   * A ScrollView
-   * A LinearLayout for Shoe Items
-   * A FloatingActionButton with an action to navigate to the shoe detail screen
-
-10. In MainActivity, setup the nav controller with the toolbar and an AppBarConfiguration.
-
-11. Create a new Shoe Detail destination that includes:
-
-    * A new layout
-    * A TextView label and EditView for the
-      * Shoe Name
-      * Company
-      * Shoe Size
-      * Description
-    * A Cancel button with an action to navigate back to the shoe list screen
-    * A Save button with an action to navigate back to the shoe list screen and add a new Shoe to the Shoe View Model
-
-12. Make sure you can’t go back to onboarding screens
-
-13. In the Shoe List screen:
-
-    * Use an Activity level ViewModel to hold a list of Shoes (use by activityViewModels)
-    * Observe the shoes variable from the ViewModel
-    * Use DataBindingUtil to inflate the shoe_list layout
-    * Add a new layout item into the scrollview for each shoe.
+![image](https://github.com/user-attachments/assets/36e0a0a8-2cfb-413d-b915-4e29afaf1409) ![image](https://github.com/user-attachments/assets/9cd5322a-3a9e-4132-95ee-0700a4085fbe) ![image](https://github.com/user-attachments/assets/4615eaf6-c7c6-427f-8843-549dec9d03b9) ![image](https://github.com/user-attachments/assets/b95ebcb3-73d1-4542-8acb-fef52550a278) ![image](https://github.com/user-attachments/assets/09e6f09e-9b21-44d9-b085-1cf770325c45)
